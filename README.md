@@ -1,4 +1,4 @@
-# beaver
+# osugame
 doing gamedev at OSU
 
 # trello
