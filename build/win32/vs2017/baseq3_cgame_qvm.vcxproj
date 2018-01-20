@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53C6662E-3FBF-8580-68F1-6A055449658C}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>baseq3_cgame_qvm</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin_x86\</OutDir>
+    <IntDir>obj\x86\Release\baseq3_cgame_qvm\</IntDir>
+    <TargetName>baseq3_cgame_qvm</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin_x64\</OutDir>
+    <IntDir>obj\x64\Release\baseq3_cgame_qvm\</IntDir>
+    <TargetName>baseq3_cgame_qvm</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin_x86_debug\</OutDir>
+    <IntDir>obj\x86\Debug\baseq3_cgame_qvm\</IntDir>
+    <TargetName>baseq3_cgame_qvm</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin_x64_debug\</OutDir>
+    <IntDir>obj\x64\Debug\baseq3_cgame_qvm\</IntDir>
+    <TargetName>baseq3_cgame_qvm</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <OutDir>bin_x86\</OutDir>
+    <IntDir>obj\x86\Profile\baseq3_cgame_qvm\</IntDir>
+    <TargetName>baseq3_cgame_qvm</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <OutDir>bin_x64\</OutDir>
+    <IntDir>obj\x64\Profile\baseq3_cgame_qvm\</IntDir>
+    <TargetName>baseq3_cgame_qvm</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(IntDir)
+"$(TargetDir)/q3asm.exe" -o "$(TargetDir)/baseq3/vm/cgame" cg_main.asm cg_consolecmds.asm cg_draw.asm cg_drawtools.asm cg_effects.asm cg_ents.asm cg_event.asm cg_info.asm cg_localents.asm cg_marks.asm cg_particles.asm cg_players.asm cg_playerstate.asm cg_predict.asm cg_scoreboard.asm cg_servercmds.asm cg_snapshot.asm cg_view.asm cg_weapons.asm bg_lib.asm bg_misc.asm bg_pmove.asm bg_slidemove.asm q_math.asm q_shared.asm C:/iSee/ioquake3/ioq3/code/cgame/cg_syscalls.asm</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;NDEBUG;_WIN64;__WIN64__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(IntDir)
+"$(TargetDir)/q3asm.exe" -o "$(TargetDir)/baseq3/vm/cgame" cg_main.asm cg_consolecmds.asm cg_draw.asm cg_drawtools.asm cg_effects.asm cg_ents.asm cg_event.asm cg_info.asm cg_localents.asm cg_marks.asm cg_particles.asm cg_players.asm cg_playerstate.asm cg_predict.asm cg_scoreboard.asm cg_servercmds.asm cg_snapshot.asm cg_view.asm cg_weapons.asm bg_lib.asm bg_misc.asm bg_pmove.asm bg_slidemove.asm q_math.asm q_shared.asm C:/iSee/ioquake3/ioq3/code/cgame/cg_syscalls.asm</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(IntDir)
+"$(TargetDir)/q3asm.exe" -o "$(TargetDir)/baseq3/vm/cgame" cg_main.asm cg_consolecmds.asm cg_draw.asm cg_drawtools.asm cg_effects.asm cg_ents.asm cg_event.asm cg_info.asm cg_localents.asm cg_marks.asm cg_particles.asm cg_players.asm cg_playerstate.asm cg_predict.asm cg_scoreboard.asm cg_servercmds.asm cg_snapshot.asm cg_view.asm cg_weapons.asm bg_lib.asm bg_misc.asm bg_pmove.asm bg_slidemove.asm q_math.asm q_shared.asm C:/iSee/ioquake3/ioq3/code/cgame/cg_syscalls.asm</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_DEBUG;_WIN64;__WIN64__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(IntDir)
+"$(TargetDir)/q3asm.exe" -o "$(TargetDir)/baseq3/vm/cgame" cg_main.asm cg_consolecmds.asm cg_draw.asm cg_drawtools.asm cg_effects.asm cg_ents.asm cg_event.asm cg_info.asm cg_localents.asm cg_marks.asm cg_particles.asm cg_players.asm cg_playerstate.asm cg_predict.asm cg_scoreboard.asm cg_servercmds.asm cg_snapshot.asm cg_view.asm cg_weapons.asm bg_lib.asm bg_misc.asm bg_pmove.asm bg_slidemove.asm q_math.asm q_shared.asm C:/iSee/ioquake3/ioq3/code/cgame/cg_syscalls.asm</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;USE_PROFILER;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(IntDir)
+"$(TargetDir)/q3asm.exe" -o "$(TargetDir)/baseq3/vm/cgame" cg_main.asm cg_consolecmds.asm cg_draw.asm cg_drawtools.asm cg_effects.asm cg_ents.asm cg_event.asm cg_info.asm cg_localents.asm cg_marks.asm cg_particles.asm cg_players.asm cg_playerstate.asm cg_predict.asm cg_scoreboard.asm cg_servercmds.asm cg_snapshot.asm cg_view.asm cg_weapons.asm bg_lib.asm bg_misc.asm bg_pmove.asm bg_slidemove.asm q_math.asm q_shared.asm C:/iSee/ioquake3/ioq3/code/cgame/cg_syscalls.asm</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;USE_PROFILER;NDEBUG;_WIN64;__WIN64__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(IntDir)
+"$(TargetDir)/q3asm.exe" -o "$(TargetDir)/baseq3/vm/cgame" cg_main.asm cg_consolecmds.asm cg_draw.asm cg_drawtools.asm cg_effects.asm cg_ents.asm cg_event.asm cg_info.asm cg_localents.asm cg_marks.asm cg_particles.asm cg_players.asm cg_playerstate.asm cg_predict.asm cg_scoreboard.asm cg_servercmds.asm cg_snapshot.asm cg_view.asm cg_weapons.asm bg_lib.asm bg_misc.asm bg_pmove.asm bg_slidemove.asm q_math.asm q_shared.asm C:/iSee/ioquake3/ioq3/code/cgame/cg_syscalls.asm</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ioq3\code\cgame\cg_local.h" />
+    <ClInclude Include="..\..\..\ioq3\code\cgame\cg_public.h" />
+    <ClInclude Include="..\..\..\ioq3\code\game\bg_lib.h" />
+    <ClInclude Include="..\..\..\ioq3\code\game\bg_local.h" />
+    <ClInclude Include="..\..\..\ioq3\code\game\bg_public.h" />
+    <ClInclude Include="..\..\..\ioq3\code\qcommon\q_shared.h" />
+    <ClInclude Include="..\..\..\ioq3\code\qcommon\surfaceflags.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_consolecmds.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_consolecmds.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_draw.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_draw.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_drawtools.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_drawtools.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_effects.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_effects.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_ents.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_ents.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_event.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_event.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_info.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_info.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_localents.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_localents.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_main.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_main.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_marks.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_marks.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_particles.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_particles.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_players.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_players.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_playerstate.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_playerstate.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_predict.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_predict.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_scoreboard.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_scoreboard.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_servercmds.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_servercmds.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_snapshot.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_snapshot.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_view.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_view.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\cgame\cg_weapons.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc cg_weapons.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\game\bg_lib.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc bg_lib.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\game\bg_misc.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc bg_misc.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\game\bg_pmove.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc bg_pmove.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\game\bg_slidemove.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc bg_slidemove.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\qcommon\q_math.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc q_math.c</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\qcommon\q_shared.c">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">"bin_x86\lcc.exe" -DCGAME -Wo-lccdir="bin_x86" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">"bin_x64\lcc.exe" -DCGAME -Wo-lccdir="bin_x64" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bin_x86_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x86_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"bin_x64_debug\lcc.exe" -DCGAME -Wo-lccdir="bin_x64_debug" -o "$(IntDir)\%(Filename).asm" "%(Identity)"</Command>
+      <Outputs>$(IntDir)/%(Filename).asm</Outputs>
+      <Message>lcc q_shared.c</Message>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="lcc.vcxproj">
+      <Project>{778B880B-E394-887C-6C10-9F7CD818947C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="q3asm.vcxproj">
+      <Project>{4A741910-B688-41C1-7F0A-E520EBDD3DF2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="q3cpp.vcxproj">
+      <Project>{6C7C1910-D890-41C1-A112-E5200DE63DF2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="q3rcc.vcxproj">
+      <Project>{81BA1910-EDCE-41C1-B650-E52022243EF2}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

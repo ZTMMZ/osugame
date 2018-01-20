@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1225D153-FE1D-F0A5-2750-D52A13A8CFB1}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>renderer_opengl2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin_x86\</OutDir>
+    <IntDir>obj\x86\Release\renderer_opengl2\</IntDir>
+    <TargetName>renderer_opengl2_x86</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin_x64\</OutDir>
+    <IntDir>obj\x64\Release\renderer_opengl2\</IntDir>
+    <TargetName>renderer_opengl2_x86_64</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin_x86_debug\</OutDir>
+    <IntDir>obj\x86\Debug\renderer_opengl2\</IntDir>
+    <TargetName>renderer_opengl2_x86</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin_x64_debug\</OutDir>
+    <IntDir>obj\x64\Debug\renderer_opengl2\</IntDir>
+    <TargetName>renderer_opengl2_x86_64</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin_x86\</OutDir>
+    <IntDir>obj\x86\Profile\renderer_opengl2\</IntDir>
+    <TargetName>renderer_opengl2_x86</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin_x64\</OutDir>
+    <IntDir>obj\x64\Profile\renderer_opengl2\</IntDir>
+    <TargetName>renderer_opengl2_x86_64</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;NDEBUG;_WIN32;WIN32;USE_INTERNAL_JPEG;USE_RENDERER_DLOPEN;USE_LOCAL_HEADERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3\code\SDL2\include;..\..\..\ioq3\code\libcurl;..\..\..\ioq3\code\AL;..\..\..\ioq3\code\zlib;..\..\..\ioq3\code\jpeg-8c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x86\renderer_opengl2_x86.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;NDEBUG;_WIN64;__WIN64__;_WIN32;WIN32;USE_INTERNAL_JPEG;USE_RENDERER_DLOPEN;USE_LOCAL_HEADERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3\code\SDL2\include;..\..\..\ioq3\code\libcurl;..\..\..\ioq3\code\AL;..\..\..\ioq3\code\zlib;..\..\..\ioq3\code\jpeg-8c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>/wd"4267" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x64\renderer_opengl2_x86_64.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_DEBUG;_WIN32;WIN32;USE_INTERNAL_JPEG;USE_RENDERER_DLOPEN;USE_LOCAL_HEADERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3\code\SDL2\include;..\..\..\ioq3\code\libcurl;..\..\..\ioq3\code\AL;..\..\..\ioq3\code\zlib;..\..\..\ioq3\code\jpeg-8c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x86_debug\renderer_opengl2_x86.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_DEBUG;_WIN64;__WIN64__;_WIN32;WIN32;USE_INTERNAL_JPEG;USE_RENDERER_DLOPEN;USE_LOCAL_HEADERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3\code\SDL2\include;..\..\..\ioq3\code\libcurl;..\..\..\ioq3\code\AL;..\..\..\ioq3\code\zlib;..\..\..\ioq3\code\jpeg-8c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/wd"4267" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x64_debug\renderer_opengl2_x86_64.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;USE_PROFILER;NDEBUG;_WIN32;WIN32;USE_INTERNAL_JPEG;USE_RENDERER_DLOPEN;USE_LOCAL_HEADERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3\code\SDL2\include;..\..\..\ioq3\code\libcurl;..\..\..\ioq3\code\AL;..\..\..\ioq3\code\zlib;..\..\..\ioq3\code\jpeg-8c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x86\renderer_opengl2_x86.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;USE_PROFILER;NDEBUG;_WIN64;__WIN64__;_WIN32;WIN32;USE_INTERNAL_JPEG;USE_RENDERER_DLOPEN;USE_LOCAL_HEADERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3\code\SDL2\include;..\..\..\ioq3\code\libcurl;..\..\..\ioq3\code\AL;..\..\..\ioq3\code\zlib;..\..\..\ioq3\code\jpeg-8c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>/wd"4267" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x64\renderer_opengl2_x86_64.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ioq3\code\jpeg-8c\jconfig.h" />
+    <ClInclude Include="..\..\..\ioq3\code\jpeg-8c\jdct.h" />
+    <ClInclude Include="..\..\..\ioq3\code\jpeg-8c\jerror.h" />
+    <ClInclude Include="..\..\..\ioq3\code\jpeg-8c\jinclude.h" />
+    <ClInclude Include="..\..\..\ioq3\code\jpeg-8c\jmemsys.h" />
+    <ClInclude Include="..\..\..\ioq3\code\jpeg-8c\jmorecfg.h" />
+    <ClInclude Include="..\..\..\ioq3\code\jpeg-8c\jpegint.h" />
+    <ClInclude Include="..\..\..\ioq3\code\jpeg-8c\jpeglib.h" />
+    <ClInclude Include="..\..\..\ioq3\code\jpeg-8c\jversion.h" />
+    <ClInclude Include="..\..\..\ioq3\code\qcommon\puff.h" />
+    <ClInclude Include="..\..\..\ioq3\code\qcommon\q_shared.h" />
+    <ClInclude Include="..\..\..\ioq3\code\qcommon\qcommon.h" />
+    <ClInclude Include="..\..\..\ioq3\code\qcommon\qfiles.h" />
+    <ClInclude Include="..\..\..\ioq3\code\qcommon\surfaceflags.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderercommon\iqm.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderercommon\qgl.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderercommon\tr_common.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderercommon\tr_public.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderercommon\tr_types.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderergl2\tr_dsa.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderergl2\tr_extramath.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderergl2\tr_extratypes.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderergl2\tr_fbo.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderergl2\tr_local.h" />
+    <ClInclude Include="..\..\..\ioq3\code\renderergl2\tr_postprocess.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jaricom.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcapimin.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcapistd.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcarith.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jccoefct.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jccolor.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcdctmgr.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jchuff.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcinit.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcmainct.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcmarker.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcmaster.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcomapi.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcparam.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcprepct.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jcsample.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jctrans.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdapimin.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdapistd.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdarith.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdatadst.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdatasrc.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdcoefct.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdcolor.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jddctmgr.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdhuff.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdinput.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdmainct.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdmarker.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdmaster.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdmerge.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdpostct.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdsample.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jdtrans.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jerror.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jfdctflt.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jfdctfst.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jfdctint.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jidctflt.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jidctfst.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jidctint.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jmemmgr.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jmemnobs.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jquant1.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jquant2.c" />
+    <ClCompile Include="..\..\..\ioq3\code\jpeg-8c\jutils.c" />
+    <ClCompile Include="..\..\..\ioq3\code\qcommon\puff.c" />
+    <ClCompile Include="..\..\..\ioq3\code\qcommon\q_math.c" />
+    <ClCompile Include="..\..\..\ioq3\code\qcommon\q_shared.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderercommon\tr_font.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderercommon\tr_image_bmp.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderercommon\tr_image_jpg.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderercommon\tr_image_pcx.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderercommon\tr_image_png.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderercommon\tr_image_tga.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderercommon\tr_noise.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_animation.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_backend.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_bsp.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_cmds.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_curve.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_dsa.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_extensions.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_extramath.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_fbo.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_flares.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_glsl.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_image.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_image_dds.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_init.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_light.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_main.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_marks.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_mesh.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_model.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_model_iqm.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_postprocess.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_scene.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_shade.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_shade_calc.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_shader.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_shadows.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_sky.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_subs.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_surface.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_vbo.c" />
+    <ClCompile Include="..\..\..\ioq3\code\renderergl2\tr_world.c" />
+    <ClCompile Include="..\..\..\ioq3\code\sdl\sdl_gamma.c" />
+    <ClCompile Include="..\..\..\ioq3\code\sdl\sdl_glimp.c" />
+    <ClCompile Include="dynamic\renderergl2\bokeh_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\bokeh_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\calclevels4x_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\calclevels4x_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\depthblur_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\depthblur_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\dlight_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\dlight_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\down4x_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\down4x_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\fogpass_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\fogpass_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\generic_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\generic_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\lightall_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\lightall_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\pshadow_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\pshadow_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\shadowfill_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\shadowfill_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\shadowmask_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\shadowmask_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\ssao_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\ssao_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\texturecolor_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\texturecolor_vp.c" />
+    <ClCompile Include="dynamic\renderergl2\tonemap_fp.c" />
+    <ClCompile Include="dynamic\renderergl2\tonemap_vp.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\bokeh_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying bokeh_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\bokeh_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying bokeh_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\calclevels4x_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying calclevels4x_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\calclevels4x_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying calclevels4x_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\depthblur_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying depthblur_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\depthblur_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying depthblur_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\dlight_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying dlight_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\dlight_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying dlight_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\down4x_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying down4x_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\down4x_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying down4x_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\fogpass_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying fogpass_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\fogpass_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying fogpass_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\generic_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying generic_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\generic_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying generic_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\lightall_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying lightall_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\lightall_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying lightall_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\pshadow_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying pshadow_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\pshadow_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying pshadow_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\shadowfill_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying shadowfill_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\shadowfill_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying shadowfill_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\shadowmask_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying shadowmask_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\shadowmask_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying shadowmask_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\ssao_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying ssao_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\ssao_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying ssao_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\texturecolor_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying texturecolor_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\texturecolor_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying texturecolor_vp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\tonemap_fp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying tonemap_fp.glsl</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ioq3\code\renderergl2\glsl\tonemap_vp.glsl">
+      <FileType>Document</FileType>
+      <Command>cscript.exe "C:/iSee/ioquake3/ioq3/misc/msvc/glsl_stringify.vbs" //Nologo "%(Identity)" "dynamic\renderergl2\%(Filename).c"</Command>
+      <Outputs>dynamic/renderergl2/%(Filename).c</Outputs>
+      <Message>Stringifying tonemap_vp.glsl</Message>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SDL2.vcxproj">
+      <Project>{3ABE8B7C-26F5-8C0D-CFE1-7210BBF7080F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="zlib.vcxproj">
+      <Project>{16CFA17C-0206-A30D-ABF2-881097081F0F}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E2044691-4EC5-C1C7-1700-0B45837F06A4}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>renderer_bgfx</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin_x86\</OutDir>
+    <IntDir>obj\x86\Release\renderer_bgfx\</IntDir>
+    <TargetName>renderer_bgfx_x86</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin_x64\</OutDir>
+    <IntDir>obj\x64\Release\renderer_bgfx\</IntDir>
+    <TargetName>renderer_bgfx_x86_64</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin_x86_debug\</OutDir>
+    <IntDir>obj\x86\Debug\renderer_bgfx\</IntDir>
+    <TargetName>renderer_bgfx_x86</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin_x64_debug\</OutDir>
+    <IntDir>obj\x64\Debug\renderer_bgfx\</IntDir>
+    <TargetName>renderer_bgfx_x86_64</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin_x86\</OutDir>
+    <IntDir>obj\x86\Profile\renderer_bgfx\</IntDir>
+    <TargetName>renderer_bgfx_x86</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin_x64\</OutDir>
+    <IntDir>obj\x64\Profile\renderer_bgfx\</IntDir>
+    <TargetName>renderer_bgfx_x86_64</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;BGFX_CONFIG_RENDERER_OPENGL=32;BGFX_CONFIG_RENDERDOC_LOG_FILEPATH="ioq3-renderer-bgfx";USE_RENDERER_DLOPEN;ENGINE_IOQ3;BGFX_CONFIG_RENDERER_DIRECT3D11=1;BGFX_CONFIG_RENDERER_DIRECT3D12=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3-renderer-bgfx\code\bx\include;..\..\..\ioq3-renderer-bgfx\code\bimg\include;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\nvtt;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\iqa\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\dxsdk\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\khronos;..\..\..\ioq3-renderer-bgfx\code\stb;..\..\..\ioq3-renderer-bgfx\code\bx\include\compat\msvc;..\..\..\ioq3\code\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/wd"4316" /wd"4351" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3dcompiler.lib;gdi32.lib;OpenGL32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x86\renderer_bgfx_x86.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;NDEBUG;_WIN64;__WIN64__;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;BGFX_CONFIG_RENDERER_OPENGL=32;BGFX_CONFIG_RENDERDOC_LOG_FILEPATH="ioq3-renderer-bgfx";USE_RENDERER_DLOPEN;ENGINE_IOQ3;BGFX_CONFIG_RENDERER_DIRECT3D11=1;BGFX_CONFIG_RENDERER_DIRECT3D12=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3-renderer-bgfx\code\bx\include;..\..\..\ioq3-renderer-bgfx\code\bimg\include;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\nvtt;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\iqa\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\dxsdk\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\khronos;..\..\..\ioq3-renderer-bgfx\code\stb;..\..\..\ioq3-renderer-bgfx\code\bx\include\compat\msvc;..\..\..\ioq3\code\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/wd"4316" /wd"4351" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3dcompiler.lib;gdi32.lib;OpenGL32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x64\renderer_bgfx_x86_64.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_DEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;BGFX_CONFIG_RENDERER_OPENGL=32;BGFX_CONFIG_RENDERDOC_LOG_FILEPATH="ioq3-renderer-bgfx";USE_RENDERER_DLOPEN;ENGINE_IOQ3;BGFX_CONFIG_DEBUG=1;BGFX_CONFIG_RENDERER_DIRECT3D11=1;BGFX_CONFIG_RENDERER_DIRECT3D12=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3-renderer-bgfx\code\bx\include;..\..\..\ioq3-renderer-bgfx\code\bimg\include;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\nvtt;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\iqa\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\dxsdk\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\khronos;..\..\..\ioq3-renderer-bgfx\code\stb;..\..\..\ioq3-renderer-bgfx\code\bx\include\compat\msvc;..\..\..\ioq3\code\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/wd"4316" /wd"4351" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dcompiler.lib;gdi32.lib;OpenGL32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x86_debug\renderer_bgfx_x86.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_DEBUG;_WIN64;__WIN64__;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;BGFX_CONFIG_RENDERER_OPENGL=32;BGFX_CONFIG_RENDERDOC_LOG_FILEPATH="ioq3-renderer-bgfx";USE_RENDERER_DLOPEN;ENGINE_IOQ3;BGFX_CONFIG_DEBUG=1;BGFX_CONFIG_RENDERER_DIRECT3D11=1;BGFX_CONFIG_RENDERER_DIRECT3D12=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3-renderer-bgfx\code\bx\include;..\..\..\ioq3-renderer-bgfx\code\bimg\include;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\nvtt;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\iqa\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\dxsdk\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\khronos;..\..\..\ioq3-renderer-bgfx\code\stb;..\..\..\ioq3-renderer-bgfx\code\bx\include\compat\msvc;..\..\..\ioq3\code\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/wd"4316" /wd"4351" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dcompiler.lib;gdi32.lib;OpenGL32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x64_debug\renderer_bgfx_x86_64.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;USE_PROFILER;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;BGFX_CONFIG_RENDERER_OPENGL=32;BGFX_CONFIG_RENDERDOC_LOG_FILEPATH="ioq3-renderer-bgfx";USE_RENDERER_DLOPEN;ENGINE_IOQ3;BGFX_CONFIG_RENDERER_DIRECT3D11=1;BGFX_CONFIG_RENDERER_DIRECT3D12=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3-renderer-bgfx\code\bx\include;..\..\..\ioq3-renderer-bgfx\code\bimg\include;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\nvtt;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\iqa\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\dxsdk\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\khronos;..\..\..\ioq3-renderer-bgfx\code\stb;..\..\..\ioq3-renderer-bgfx\code\bx\include\compat\msvc;..\..\..\ioq3\code\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/wd"4316" /wd"4351" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3dcompiler.lib;gdi32.lib;OpenGL32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x86\renderer_bgfx_x86.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;USE_PROFILER;NDEBUG;_WIN64;__WIN64__;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;BGFX_CONFIG_RENDERER_OPENGL=32;BGFX_CONFIG_RENDERDOC_LOG_FILEPATH="ioq3-renderer-bgfx";USE_RENDERER_DLOPEN;ENGINE_IOQ3;BGFX_CONFIG_RENDERER_DIRECT3D11=1;BGFX_CONFIG_RENDERER_DIRECT3D12=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\ioq3-renderer-bgfx\code\bx\include;..\..\..\ioq3-renderer-bgfx\code\bimg\include;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\nvtt;..\..\..\ioq3-renderer-bgfx\code\bimg\3rdparty\iqa\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\dxsdk\include;..\..\..\ioq3-renderer-bgfx\code\bgfx\3rdparty\khronos;..\..\..\ioq3-renderer-bgfx\code\stb;..\..\..\ioq3-renderer-bgfx\code\bx\include\compat\msvc;..\..\..\ioq3\code\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/wd"4316" /wd"4351" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3dcompiler.lib;gdi32.lib;OpenGL32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>bin_x64\renderer_bgfx_x86_64.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\include\bgfx\bgfx.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\include\bgfx\defines.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\include\bgfx\embedded_shader.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\include\bgfx\platform.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\bgfx_p.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\charset.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\config.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\debug_renderdoc.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear0.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear1.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear2.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear3.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear4.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear5.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear6.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear7.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_debugfont.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_eagl.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_egl.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_glx.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_nsgl.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_wgl.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glimports.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\hmd.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\hmd_openvr.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\hmd_ovr.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\nvapi.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d11.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d12.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d9.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_gl.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_mtl.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_vk.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_dx9bc.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_dxbc.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_spirv.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\topology.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\vertexdecl.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\vs_clear.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\vs_debugfont.bin.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bimg\include\bimg\bimg.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bimg\include\bimg\decode.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bimg\include\bimg\encode.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bimg\src\bimg_p.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\allocator.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\bx.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\commandline.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\config.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\cpu.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\debug.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\easing.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\endian.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\error.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\file.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\filepath.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\float4x4_t.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\handlealloc.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\hash.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\allocator.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\bx.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\cpu.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\easing.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\endian.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\error.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\float4x4_t.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\handlealloc.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\hash.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\math.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\mpscqueue.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\mutex.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\pixelformat.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\readerwriter.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\ringbuffer.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\rng.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd128_langext.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd128_neon.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd128_ref.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd128_sse.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd128_swizzle.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd256_avx.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd256_ref.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd_ni.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\sort.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\spscqueue.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\string.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\uint32_t.inl" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\macros.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\maputil.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\math.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\mpscqueue.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\mutex.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\os.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\pixelformat.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\platform.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\process.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\readerwriter.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\ringbuffer.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\rng.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\semaphore.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\settings.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\simd_t.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\sort.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\spscqueue.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\string.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\thread.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\timer.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\uint32_t.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\url.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\math\Math.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\math\half.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Interface.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Interface_ioq3.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Interface_iortcw.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Main.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Precompiled.h" />
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\bgfx.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\debug_renderdoc.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_glx.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_wgl.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\hmd.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\nvapi.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d11.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d12.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d9.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_gl.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_gnm.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_noop.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_vk.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_dx9bc.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_dxbc.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_spirv.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\topology.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\vertexdecl.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bimg\src\image.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\allocator.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\bx.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\commandline.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\crtnone.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\debug.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\dtoa.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\file.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\filepath.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\hash.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\math.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\mutex.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\os.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\process.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\semaphore.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\sort.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\string.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\thread.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\timer.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\Bounds.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\Frustum.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\Matrix.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\Plane.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\Vector.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\half.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\DynamicLight.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Image_load.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Interface_ioq3.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Interface_iortcw.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Main.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Main_frame.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Main_init.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Material.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\MaterialCache.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Material_calculate.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Material_parse.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Meta.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Model.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Model_md3.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Model_mds.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Patch.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Precompiled.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Profiler.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Sky.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Texture.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Util.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Window.cpp" />
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\AlphaTest.sh" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Bloom_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Color_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Color_vertex.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Common.sh" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Depth_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Depth_vertex.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\DynamicLight.sh" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Fog_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Fog_vertex.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\GaussianBlur_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Gen_Deform.sh" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Gen_Tex.sh" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Generic_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Generic_vertex.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\HemicubeDownsample_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\HemicubeWeightedDownsample_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\PortalClip.sh" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAA.hlsl" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAA.sh" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAABlendingWeightCalculation_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAABlendingWeightCalculation_vertex.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAAEdgeDetection_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAAEdgeDetection_vertex.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAANeighborhoodBlending_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAANeighborhoodBlending_vertex.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SharedDefines.sh" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SunLight.sh" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\TextureColor_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\TextureDebug_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\TextureVariation_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Texture_fragment.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Texture_vertex.sc" />
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\varying.def.sc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SDL2.vcxproj">
+      <Project>{3ABE8B7C-26F5-8C0D-CFE1-7210BBF7080F}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

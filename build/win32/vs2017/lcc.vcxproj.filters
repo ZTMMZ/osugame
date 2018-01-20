@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ioq3">
+      <UniqueIdentifier>{418A987C-2DC1-990D-D6AD-7F10C2C3150F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ioq3\code">
+      <UniqueIdentifier>{8BC9A89E-F733-5D15-4072-0EBBAC1B3B6A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ioq3\code\tools">
+      <UniqueIdentifier>{6BDA4EB8-D765-BC7C-E076-3F714C81187D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ioq3\code\tools\lcc">
+      <UniqueIdentifier>{4CB6D79F-B817-B5AD-4185-FB5FADE5EB6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ioq3\code\tools\lcc\etc">
+      <UniqueIdentifier>{177F3D96-83B6-852D-8CC0-E950F876AC26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lcc">
+      <UniqueIdentifier>{778B880B-E394-887C-6C10-9F7CD818947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ioq3\code\tools\lcc\etc\bytecode.c">
+      <Filter>ioq3\code\tools\lcc\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lcc\lcc.c">
+      <Filter>lcc</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

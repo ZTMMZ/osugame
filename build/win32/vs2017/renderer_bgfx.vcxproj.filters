@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="bgfx">
+      <UniqueIdentifier>{6C90947C-58C7-950D-01B4-7B10EDC9110F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bgfx\include">
+      <UniqueIdentifier>{DF6331EF-CBC6-C093-744C-F949608E8C16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bgfx\include\bgfx">
+      <UniqueIdentifier>{D5A73F10-41BE-3DA6-8A35-C9C7F68A0E2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bgfx\src">
+      <UniqueIdentifier>{83A41ADC-6F71-75E7-988A-638F84B6AA75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bimg">
+      <UniqueIdentifier>{C499947C-B0D0-950D-59BD-7B1045D3110F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bimg\include">
+      <UniqueIdentifier>{3745F159-23A8-80FE-CC2D-B9B4B86F4C81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bimg\include\bimg">
+      <UniqueIdentifier>{85295AB0-F13F-5846-3AB7-E367A60C29CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bimg\src">
+      <UniqueIdentifier>{DB992F85-C766-8A90-F07F-7838DCABBF1E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bx">
+      <UniqueIdentifier>{5F775900-4B03-880B-B4B1-880BA05C880B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bx\include">
+      <UniqueIdentifier>{D28D9B56-BE45-DDA3-274D-B6FF13247894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bx\include\bx">
+      <UniqueIdentifier>{9B6980E2-072A-FC18-D064-45963CE440F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bx\include\bx\inline">
+      <UniqueIdentifier>{498C8E3D-351B-1807-DE39-2C02CAA728AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bx\src">
+      <UniqueIdentifier>{F6CC0FF5-E26E-3ACB-CB29-4E1FB76AC11B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{CF809A7C-BBB7-9B0D-64A4-811050BA170F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderer_bgfx">
+      <UniqueIdentifier>{E2044691-4EC5-C1C7-1700-0B45837F06A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{0F45D591-7B24-542D-843C-DF03F09ABA8E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\include\bgfx\bgfx.h">
+      <Filter>bgfx\include\bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\include\bgfx\defines.h">
+      <Filter>bgfx\include\bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\include\bgfx\embedded_shader.h">
+      <Filter>bgfx\include\bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\include\bgfx\platform.h">
+      <Filter>bgfx\include\bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\bgfx_p.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\charset.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\config.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\debug_renderdoc.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear0.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear1.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear2.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear3.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear4.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear5.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear6.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_clear7.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\fs_debugfont.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_eagl.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_egl.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_glx.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_nsgl.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_wgl.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glimports.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\hmd.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\hmd_openvr.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\hmd_ovr.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\nvapi.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d11.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d12.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d9.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_gl.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_mtl.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_vk.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_dx9bc.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_dxbc.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_spirv.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\topology.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\vertexdecl.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\vs_clear.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\vs_debugfont.bin.h">
+      <Filter>bgfx\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bimg\include\bimg\bimg.h">
+      <Filter>bimg\include\bimg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bimg\include\bimg\decode.h">
+      <Filter>bimg\include\bimg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bimg\include\bimg\encode.h">
+      <Filter>bimg\include\bimg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bimg\src\bimg_p.h">
+      <Filter>bimg\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\allocator.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\bx.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\commandline.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\config.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\cpu.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\debug.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\easing.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\endian.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\error.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\file.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\filepath.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\float4x4_t.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\handlealloc.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\hash.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\allocator.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\bx.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\cpu.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\easing.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\endian.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\error.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\float4x4_t.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\handlealloc.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\hash.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\math.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\mpscqueue.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\mutex.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\pixelformat.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\readerwriter.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\ringbuffer.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\rng.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd128_langext.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd128_neon.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd128_ref.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd128_sse.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd128_swizzle.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd256_avx.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd256_ref.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\simd_ni.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\sort.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\spscqueue.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\string.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\inline\uint32_t.inl">
+      <Filter>bx\include\bx\inline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\macros.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\maputil.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\math.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\mpscqueue.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\mutex.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\os.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\pixelformat.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\platform.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\process.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\readerwriter.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\ringbuffer.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\rng.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\semaphore.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\settings.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\simd_t.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\sort.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\spscqueue.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\string.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\thread.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\timer.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\uint32_t.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\bx\include\bx\url.h">
+      <Filter>bx\include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\math\Math.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\math\half.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Interface.h">
+      <Filter>renderer_bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Interface_ioq3.h">
+      <Filter>renderer_bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Interface_iortcw.h">
+      <Filter>renderer_bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Main.h">
+      <Filter>renderer_bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Precompiled.h">
+      <Filter>renderer_bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\World.h">
+      <Filter>renderer_bgfx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\bgfx.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\debug_renderdoc.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_glx.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\glcontext_wgl.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\hmd.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\nvapi.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d11.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d12.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_d3d9.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_gl.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_gnm.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_noop.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\renderer_vk.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_dx9bc.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_dxbc.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\shader_spirv.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\topology.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bgfx\src\vertexdecl.cpp">
+      <Filter>bgfx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bimg\src\image.cpp">
+      <Filter>bimg\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\allocator.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\bx.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\commandline.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\crtnone.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\debug.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\dtoa.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\file.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\filepath.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\hash.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\math.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\mutex.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\os.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\process.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\semaphore.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\sort.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\string.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\thread.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\bx\src\timer.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\Bounds.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\Frustum.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\Matrix.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\Plane.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\Vector.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\math\half.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\DynamicLight.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Image_load.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Interface_ioq3.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Interface_iortcw.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Main.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Main_frame.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Main_init.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Material.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\MaterialCache.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Material_calculate.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Material_parse.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Meta.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Model.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Model_md3.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Model_mds.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Patch.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Precompiled.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Profiler.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Sky.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Texture.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Util.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\Window.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ioq3-renderer-bgfx\code\renderer_bgfx\World.cpp">
+      <Filter>renderer_bgfx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\AlphaTest.sh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Bloom_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Color_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Color_vertex.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Common.sh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Depth_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Depth_vertex.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\DynamicLight.sh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Fog_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Fog_vertex.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\GaussianBlur_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Gen_Deform.sh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Gen_Tex.sh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Generic_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Generic_vertex.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\HemicubeDownsample_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\HemicubeWeightedDownsample_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\PortalClip.sh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAA.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAA.sh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAABlendingWeightCalculation_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAABlendingWeightCalculation_vertex.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAAEdgeDetection_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAAEdgeDetection_vertex.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAANeighborhoodBlending_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SMAANeighborhoodBlending_vertex.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SharedDefines.sh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\SunLight.sh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\TextureColor_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\TextureDebug_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\TextureVariation_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Texture_fragment.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\Texture_vertex.sc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\ioq3-renderer-bgfx\shaders\varying.def.sc">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
