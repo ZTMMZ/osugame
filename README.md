@@ -2,7 +2,7 @@
 doing gamedev at OSU
 
 # trello
-https://trello.com/b/lmUHOpzS/beaver
+https://trello.com/b/lmUHOpzS/osugameproject
 
 # ide
 visual studio 2017
