@@ -1,5 +1,5 @@
 # beaver
-Doing game development at Oregon State University.
+doing gamedev at OSU
 
 # trello
 https://trello.com/b/lmUHOpzS/beaver
